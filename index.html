@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplistic English Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>English Learning Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#vocabulary" class="nav-link active" data-section="vocabulary">Vocabulary</a></li>
+                <li><a href="#listening" class="nav-link" data-section="listening">Listening</a></li>
+                <li><a href="#speaking" class="nav-link" data-section="speaking">Speaking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="vocabulary" class="content-section active">
+            <h2>Vocabulary Practice</h2>
+            <div class="card">
+                <h3>Word of the Day</h3>
+                <p class="word">Serendipity</p>
+                <p class="definition">The occurrence and development of events by chance in a happy or beneficial way.</p>
+                <button onclick="loadNewWord()">New Word</button>
+            </div>
+            <div class="card">
+                <h3>Vocabulary List</h3>
+                <ul>
+                    <li>Ephemeral - lasting for a very short time.</li>
+                    <li>Ubiquitous - present, appearing, or found everywhere.</li>
+                    <li>Mellifluous - (of a voice or words) sweet or musical; pleasant to hear.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="listening" class="content-section">
+            <h2>Listening Comprehension</h2>
+            <div class="card">
+                <h3>Listen to the Story</h3>
+                <audio controls src="4L1-actress.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Listen carefully and then answer the questions below.</p>
+                <button onclick="playAudio()">Play Story</button>
+                <div class="question-area">
+                    <h4>Questions:</h4>
+                    <p>1. What was the main character's name?</p>
+                    <input type="text" placeholder="Your answer">
+                    <p>2. Where did the story take place?</p>
+                    <input type="text" placeholder="Your answer">
+                    <button>Submit Answers</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="speaking" class="content-section">
+            <h2>Speaking Practice</h2>
+            <div class="card">
+                <h3>Pronounce This Sentence:</h3>
+                <p class="sentence-to-speak">"The quick brown fox jumps over the lazy dog."</p>
+                <button onclick="startRecording()">Start Recording</button>
+                <button onclick="stopRecording()" disabled>Stop Recording</button>
+                <p class="feedback-message">Record your pronunciation and get feedback.</p>
+            </div>
+            <div class="card">
+                <h3>Role-Play Scenarios</h3>
+                <p>Practice a conversation about ordering food at a restaurant.</p>
+                <button>Start Role-Play</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Simplistic English Learning. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
